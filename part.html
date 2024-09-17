@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBUM FAMILIA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('foto familia.jpg') no-repeat center top fixed;
+            background-size: cover;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+        }
+        .content-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Espaçamento vertical entre os blocos de conteúdo */
+            width: 300px;
+            position: relative;
+            left: 20px;
+            top: 50px;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 40px; /* Aumenta o espaçamento entre os itens do menu */
+        }
+        .menu-item {
+            font-size: 18px;
+            cursor: pointer;
+            color: blue;
+            transition: color 0.3s ease;
+        }
+        .menu-item:hover {
+            color: orange;
+        }
+        /* Estilizando as seções das fotos e vídeos */
+        .content-right {
+            margin-left: 350px; /* Move as fotos e vídeos para a direita, afastando do menu */
+        }
+        .section {
+            margin-top: 50px;
+        }
+        .photo-grid, .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .photo-grid img, .video-grid video {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ALBUM DA FAMILIA</h1>
+    </div>
+    
+    <div class="main-content">
+        <div class="content-left">
+            <h2>FOTOS, VÍDEOS DA FAMÍLIA E MUITO MAIS</h2>
+            <p>Assista fotos e vídeos da família, incluindo as mascotes LOLA e MEL.</p>
+            <div class="menu">
+                <a class="menu-item" href="#fotos-lola">VER FOTOS DA LOLA</a>
+                <a class="menu-item" href="#fotos-mel">VER FOTOS DA MEL</a>
+                <a class="menu-item" href="#fotos-passeios">VER FOTOS DOS PASSEIOS</a>
+                <a class="menu-item" href="#fotos-familia">VER FOTOS FAMILIA</a>
+                <a class="menu-item" href="#videos">VER VÍDEOS</a>
+            </div>
+        </div>
+
+        <!-- Seções das fotos (agora posicionadas à direita) -->
+        <div class="content-right">
+            <div id="fotos-lola" class="section">
+                <h2>Fotos da Lola</h2>
+                <div class="photo-grid">
+                    <img src="c:\Users\thiag\OneDrive\Imagens\IMG-20240810-WA0012.jpg" alt="Foto da Lola 1">
+                    <img src="foto-lola2.jpg" alt="Foto da Lola 2">
+                    <img src="foto-lola3.jpg" alt="Foto da Lola 3">
+                </div>
+            </div>
+
+            <div id="fotos-mel" class="section">
+                <h2>Fotos da Mel</h2>
+                <div class="photo-grid">
+                    <img src="c:\Users\thiag\OneDrive\Área de Trabalho\mel.jpg" alt="Foto da Mel 1">
+                    <img src="foto-mel2.jpg" alt="Foto da Mel 2">
+                    <img src="foto-mel3.jpg" alt="Foto da Mel 3">
+                </div>
+            </div>
+
+            <div id="fotos-passeios" class="section">
+                <h2>Fotos dos Passeios</h2>
+                <div class="photo-grid">
+                    <img src="c:\Users\thiag\OneDrive\Imagens\IMG-20221019-WA0089.jpg" alt="Foto do Passeio 1">
+                    <img src="c:\Users\thiag\OneDrive\Imagens\IMG-20221019-WA0075.jpg" alt="Foto do Passeio 2">
+                    <img src="c:\Users\thiag\OneDrive\Imagens\piana3.jpg" alt="Foto do Passeio 3">
+                </div>
+            </div>
+
+            <div id="fotos-familia" class="section">
+                <h2>Fotos da Família</h2>
+                <div class="photo-grid">
+                    <img src="c:\Users\thiag\OneDrive\Imagens\IMG-20220702-WA0003.jpg" alt="Foto da Família 1">
+                    <img src="c:\Users\thiag\OneDrive\Imagens\IMG-20220719-WA0070.jpg" alt="Foto da Família 2">
+                    <img src="c:\Users\thiag\OneDrive\Imagens\piana.jpg" alt="Foto da Família 3">
+                </div>
+            </div>
+
+            <div id="videos" class="section">
+                <h2>Vídeos</h2>
+                <div class="video-grid">
+                    <video src="c:\Users\thiag\OneDrive\Imagens\video niver.mp4" controls></video>
+                    <video src="c:\Users\thiag\OneDrive\Imagens\video 2.mp4" controls></video>
+                    <video src="c:\Users\thiag\OneDrive\Imagens\video 3.mp4" controls></video>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
